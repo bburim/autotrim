@@ -10,7 +10,11 @@
 
     $.fn.autotrim = function(cmd) {
         function trim() {
+            var start = this.selectionStart;
+            var end   = this.selectionEnd;
+
             $(this).val($.trim($(this).val()));
+            this.setSelectionRange(start, end);
         };
         var that   = this;
         var methods = {
