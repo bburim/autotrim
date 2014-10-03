@@ -1,0 +1,4 @@
+About 
+========
+
+jQuery Autotrim plugin
